@@ -57,7 +57,7 @@ export function AdvantageSection() {
                 a strategic pivot that replaces third-party brands with high-quality, exclusive
                 private labels, reclaiming both your profit and your brand narrative.
               </span>
-              <span className="hidden font-extralight text-white lg:block">
+              <span className="block font-extralight text-[#FFFFFF] lg:block">
                 {descriptionLines.map((line) => (
                   <span key={line} className="block">
                     {line}

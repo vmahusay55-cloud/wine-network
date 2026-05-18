@@ -46,7 +46,7 @@ export function ClosingCtaV2({ href = "#contact" }: ClosingCtaV2Props) {
             href="https://wa.me/6582003305"
             target="_blank"
             rel="noopener noreferrer"
-            className="motion-button group mt-5 inline-flex items-center gap-1 rounded-full px-4 py-1.5 font-display text-[10px] font-medium uppercase tracking-[-0.04em] text-white transition hover:brightness-110 sm:px-5 sm:text-[11px] lg:mt-6 lg:px-[18px] lg:py-[7px] lg:text-[10px]"
+            className="motion-button group mt-[50px] lg:mt-[60px] inline-flex items-center gap-1 rounded-full px-4 py-1.5 font-display text-[10px] font-medium uppercase tracking-[-0.04em] text-white transition hover:brightness-110 sm:px-5 sm:text-[11px] lg:px-[18px] lg:py-[7px] lg:text-[10px]"
             style={{
               background:
                 "linear-gradient(#7C7C7C, #7C7C7C) padding-box, linear-gradient(166deg, rgba(255,255,255,0.1) 0%, rgba(153,153,153,0) 100%) border-box",

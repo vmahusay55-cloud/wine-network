@@ -38,11 +38,9 @@ export function HeroSection() {
             </div>
           </div>
 
-          <p className="hero-copy-in hero-copy-in-5 mt-5 max-w-[330px] text-[18px] font-light leading-6 text-white sm:mt-6 sm:max-w-[380px] lg:mt-5">
-            We source the world&apos;s finest unlabelled wines that consistently outperform the
-            icons.
+          <p className="hero-copy-in hero-copy-in-5 mt-5 max-w-[330px] text-[18px] font-light leading-6 sm:mt-6 sm:max-w-[380px] lg:mt-5" style={{ color: "#FFFFFF" }}>
+            We source the world&apos;s finest unlabelled wines that consistently outperform the icons.
           </p>
-
          <Button
             href="#revolution"
             className="hero-copy-in hero-copy-in-6 motion-button mt-5 min-w-[122px] bg-[#7C7C7C] bg-none px-5 py-2.5 text-[14px] sm:mt-6 sm:min-w-[148px] sm:px-6 sm:py-3 lg:mt-7"

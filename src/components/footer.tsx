@@ -3,7 +3,7 @@ import Image from "next/image";
 import { footerLinks } from "@/lib/home-data";
 
 const footerTextClass =
-  "font-display text-[1rem] font-medium leading-[1.4] tracking-normal text-white transition hover:text-white/70";
+  "font-display text-[16px] font-medium leading-[1.4] tracking-normal text-white transition hover:text-white/70";
 
 export function Footer() {
   return (
@@ -91,7 +91,7 @@ function FooterColumn({
 }) {
   return (
     <div className="flex flex-col gap-[18px]">
-      <p className="font-display text-[0.75rem] font-medium uppercase leading-none tracking-[0.08em] text-white/60">
+      <p className="font-display text-[16px] font-medium uppercase leading-none tracking-[0.08em] text-white/60">
         {label}
       </p>
       <div className="flex flex-col gap-[3px]">{children}</div>
