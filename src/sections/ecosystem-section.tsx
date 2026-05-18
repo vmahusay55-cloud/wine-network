@@ -105,7 +105,7 @@ export function EcosystemSection() {
 
       <div className="relative z-10 mx-auto max-w-[1442px] px-5 py-16 sm:px-12 sm:py-20 lg:px-20 lg:py-[80px]">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-stretch lg:gap-[29px]">
-          <div className="flex flex-col justify-center gap-5 lg:flex-1 lg:gap-6">
+          <div className="flex flex-col justify-center gap-5 lg:flex-1 lg:gap-6 text-center lg:text-left">
             <p className="font-display text-[34px] font-light uppercase leading-[1.05] tracking-[-0.04em] text-[#616161] sm:text-[44px] lg:text-[56px]">
               The Revolution in
             </p>
@@ -114,12 +114,12 @@ export function EcosystemSection() {
             </h2>
           </div>
           <div className="flex font-light max-w-[567px] flex-col gap-5 font-display text-[16px] leading-[1.5] tracking-[-0.04em] text-white/60 lg:w-[567px] lg:shrink-0 lg:text-[18px] lg:leading-[1.5]">
-            <p>
+            <p className="text-center lg:text-left">
               Most hospitality groups leave their most valuable asset - the guest relationship - at
               the table. That&rsquo;s why we&rsquo;ve built the world&rsquo;s first Aftermeal
               Marketing ecosystem to capture it.
             </p>
-            <p>
+            <p className="text-center lg:text-left">
               We help hospitality groups monetize their customer base through a revolutionary,
               end-to-end private label wine platform.
             </p>

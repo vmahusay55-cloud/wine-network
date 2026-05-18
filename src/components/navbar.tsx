@@ -124,7 +124,7 @@ export function Navbar() {
 
       <div
         id="mobile-navigation"
-        className={`pointer-events-auto mx-5 overflow-hidden rounded-[8px] border border-white/10 bg-[#111]/92 backdrop-blur transition-all duration-300 md:hidden ${
+        className={`pointer-events-auto mx-5 mb-[20px] sm:mb-[20px] lg:mb-[0px] overflow-hidden rounded-[8px] border border-white/10 bg-[#111]/92 backdrop-blur transition-all duration-300 md:hidden ${
           isMenuOpen
             ? "max-h-[400px] opacity-100 translate-y-0"
             : "max-h-0 opacity-0 -translate-y-2"

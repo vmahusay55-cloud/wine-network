@@ -18,7 +18,7 @@ export function HeroSection() {
           <HeroBottles className="max-w-[320px] sm:max-w-[400px] lg:w-[464px] lg:max-w-none" />
         </div>
 
-        <div className="w-full min-w-0 lg:max-w-[480px]">
+        <div className="w-full min-w-0 lg:max-w-[480px] mx-auto text-center lg:mx-0 lg:text-left">
           <p className="hero-copy-in text-[10px] font-extralight uppercase tracking-[0.32em] text-white/80 sm:text-[11px] lg:text-[12px]">
             Since 2000
           </p>
@@ -38,7 +38,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <p className="hero-copy-in hero-copy-in-5 mt-5 max-w-[330px] text-[18px] font-light leading-6 sm:mt-6 sm:max-w-[380px] lg:mt-5" style={{ color: "#FFFFFF" }}>
+          <p className="hero-copy-in hero-copy-in-5 mt-5 max-w-[330px] sm:max-w-[380px] text-[18px] font-light leading-6 text-center lg:text-left mx-auto lg:mx-0 sm:mt-6 lg:mt-5 text-white">
             We source the world&apos;s finest unlabelled wines that consistently outperform the icons.
           </p>
          <Button

@@ -79,15 +79,15 @@ function HeroSection() {
         unoptimized
       />
 
-      <div className="mx-auto flex max-w-[1296px] flex-col gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
-        <div className="max-w-[560px] pt-2 lg:max-w-[560px] lg:pt-0">
-          <p className="font-display font-[350] text-[24px] uppercase leading-[0.95] tracking-[-0.04em] text-[#747474] sm:text-[32px] lg:text-[48px]">
+      <div className="mx-auto flex max-w-[1296px] flex-col-reverse gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
+        <div className="max-w-[560px] pt-2 lg:max-w-[560px] lg:pt-0 sm:mx-auto">
+          <p className="font-display font-[350] text-center sm:text-center lg:text-left text-[24px] uppercase leading-[0.95] tracking-[-0.04em] text-[#747474] sm:text-[32px] lg:text-[48px]">
             About
           </p>
-          <h1 className="mt-1 font-noyh text-[32px] font-black uppercase leading-[0.98] text-white sm:text-[44px] lg:whitespace-nowrap lg:text-[56px]">
+          <h1 className="mt-1 font-noyh text-[32px] text-center sm:text-center lg:text-left font-black uppercase leading-[0.98] text-white sm:text-[44px] lg:whitespace-nowrap lg:text-[56px]">
             Dr. Martin Moran
           </h1>
-          <p className="mt-6 max-w-[520px] font-display text-[13px] leading-[1.48] tracking-[-0.04em] text-white/70 sm:text-[14px] lg:hidden">
+          <p className="mt-6 max-w-[520px] text-center sm:text-center lg:text-left font-display text-[18px] leading-[1.48] tracking-[-0.04em] text-white/70 sm:text-[18px] lg:hidden">
             Dr. Martin Moran is an Argentinian-born winemaker and research scientist based in
             Hahndorf in the Adelaide Hills. He has been making wine since 2010, and studied
             winemaking and viticulture in Argentina before moving to the United States, then to
@@ -161,11 +161,11 @@ function KeyPhilosophySection() {
           ))}
         </div>
 
-        <p className="mt-3 font-light max-w-[1000px] text-center font-display text-[22px] leading-[1.15] text-white/70 lg:block">
-          The range spans blanc de blancs sparkling wine, chardonnay, pinot noir, syrah, barbera,<br />
-          tempranillo, cabernet sauvignon and rosé, all from Adelaide Hills fruit and all defined by one<br />
-          overriding philosophy: extended time on lees. Where most producers move wines to bottle as<br />
-          quickly as commercially viable, Moran waits - sometimes years - believing that the complexity,<br />
+        <p className="mt-3 font-light max-w-[1000px] text-center font-display text-[18px] sm:text-[18px] leading-[1.15] text-white/70 lg:block">
+          The range spans blanc de blancs sparkling wine, chardonnay, pinot noir, syrah, barbera,<span className="hidden sm:inline"><br/></span>
+          tempranillo, cabernet sauvignon and rosé, all from Adelaide Hills fruit and all defined by one<span className="hidden sm:inline"><br/></span>
+          overriding philosophy: extended time on lees. Where most producers move wines to bottle as<span className="hidden sm:inline"><br/></span>
+          quickly as commercially viable, Moran waits - sometimes years - believing that the complexity,<span className="hidden sm:inline"><br/></span>
           texture and natural antioxidant protection that comes from lees contact is irreplaceable.
         </p>
        {/* <div className="mt-6 font-light hidden max-w-[700px] text-center font-display text-[22px] leading-[1.5] tracking-[-0.04em] text-white/62 lg:block">

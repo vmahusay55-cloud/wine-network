@@ -8,7 +8,7 @@ import { aboutStats, transformationCards } from "@/lib/about-data";
 
 const aboutImages = {
   founder: "/images/about/container-thomas.png",
-  vineyard: "/images/about/frame2.svg",
+  vineyard: "/images/about/frame-2.png",
   sentosa: "/images/about/image-40.svg",
 };
 
@@ -45,16 +45,16 @@ function VintageSection() {
         <div className="about-vintage-image lg:absolute lg:left-[32px] lg:top-[-15px] lg:w-[585px]">
           <FigureCard src={aboutImages.founder} name="Thomas Teo" priority />
         </div>
-        <div className="about-vintage-copy max-w-[620px] lg:absolute lg:left-[579px] lg:top-[82px] lg:h-[313px] lg:w-[620px]">
+        <div className="about-vintage-copy sm:mx-auto max-w-[620px] lg:absolute lg:left-[579px] lg:top-[82px] lg:h-[313px] lg:w-[620px]">
           <AboutIntroHeading />
           <div className="about-vintage-body font-light mt-[22px] space-y-[20px] font-display text-[18px] leading-[1.42] tracking-[-0.04em] text-white/60 lg:text-[18px]">
-            <p className="about-vintage-paragraph">
+            <p className="about-vintage-paragraph text-center sm:text-center lg:text-left">
               The Wine Network story began around a table shared by friends. Founded in <b className="text-[#ffffffd9]">2001</b> by our
               Chairman Emeritus, <b className="text-[#ffffffd9]">Mr. Thomas Teo</b>, we started as a humble community of enthusiasts
               bound by a singular passion for the vine.
             </p>
 
-            <p className="about-vintage-paragraph about-vintage-paragraph-2">
+            <p className="about-vintage-paragraph about-vintage-paragraph-2 text-center sm:text-center lg:text-left">
               As a true pioneer of the Singapore hospitality scene, Mr. Teo saw potential where
               others saw a smattering of rug and antique shops, establishing our first wine bar in
               the then-rustic enclave of <b className="text-[#ffffffd9]">Dempsey</b>. That first pour sparked a movement, transforming a
@@ -70,7 +70,7 @@ function VintageSection() {
 function AboutIntroHeading() {
   return (
     <div className="font-display tracking-[-0.04em]">
-      <div className="flex flex-wrap items-baseline gap-x-6 uppercase">
+      <div className="flex flex-wrap items-baseline justify-center sm:justify-center  lg:justify-start gap-x-6 uppercase">
         <span className="text-[42px] font-light leading-none text-[#616161] lg:text-[72px]">
           Our
         </span>
@@ -78,14 +78,24 @@ function AboutIntroHeading() {
           Vintage
         </h1>
     </div>
-      <p className="mt-[18px] text-[32px] font-light leading-none text-white lg:text-[32px]">
+      <p className="mt-[18px] text-center sm:text-center lg:text-left text-[32px] font-light leading-none text-white lg:text-[32px]">
         Where Heritage Meets Hospitality
       </p>
     </div>
   );
 }
 
-function WorldSection() {
+function WorldSection({
+  src,
+  alt,
+  className = "",
+  imageClassName = "object-contain object-center",
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+  imageClassName?: string;
+}) {
   return (
     <section className="about-world-bg relative isolate overflow-hidden px-6 py-20 sm:px-10 lg:h-[671px] lg:px-[78px] lg:py-[80px]">
       <div className="pointer-events-none absolute left-[-540px] top-2 h-[820px] w-[820px] -translate-y-1/2">
@@ -101,7 +111,7 @@ function WorldSection() {
       <div className="relative z-10 mx-auto grid max-w-[1286px] gap-12 lg:grid-cols-[560px_460px] lg:items-center lg:justify-between lg:gap-12">
         <div>
           <SplitHeading muted="From" strong="Across The World" />
-          <div className="mt-7 font-light max-w-[560px] space-y-6 font-display text-[18px] leading-[1.45] tracking-[-0.04em] text-white/60">
+          <div className="mt-7 sm:mx-auto text-center sm:text-center lg:text-left font-light max-w-[560px] space-y-6 font-display text-[18px] leading-[1.45] tracking-[-0.04em] text-white/60">
             <p>
               Recognizing a gap in the market for both quality and accessibility, we expanded into
               the importing and distribution in 2005.
@@ -113,7 +123,7 @@ function WorldSection() {
               bringing the avant-garde spirit of Italian winemaking to Singapore wine lovers.
             </p>
           </div>
-          <div className="mt-12 flex flex-wrap gap-16">
+          <div className="mt-12 flex flex-wrap gap-16 justify-center  sm:justify-center lg:justify-start">
             {aboutStats.map((stat) => (
               <div key={stat.label} className="font-display uppercase">
                 <p className="text-[56px] font-bold leading-none tracking-[-0.04em] text-white">
@@ -126,24 +136,36 @@ function WorldSection() {
             ))}
           </div>
         </div>
-        <div className="relative aspect-[460/511] w-full max-w-[460px] justify-self-center lg:translate-x-[-28px]">
-          <div
-            aria-hidden
-            className="absolute left-[-5%] top-0 h-[103%] w-[105%] border border-white/55"
-          />
-          <div className="absolute right-5 top-[4%]  overflow-hidden">
-           <div className="relative w-[484.37px] h-[531px]">
-            <Image
-              src={aboutImages.vineyard}
-              alt="Wine bottles from Wine Network estates"
-              fill
-              sizes="(max-width: 1024px) 90vw, 438px"
-              className="object-cover object-center"
-              unoptimized
-            />
-          </div>
-          </div>
-        </div>
+          {/* <div className="relative aspect-[460/511] w-full max-w-[460px] justify-self-center lg:translate-x-[-28px]">
+            <div
+              aria-hidden
+              className="absolute left-[-5%] top-0 h-[103%] w-[105%] border border-white/55"
+            >
+              <div className="absolute right-2 sm:right-5 top-[4%] overflow-hidden">
+                <div className="relative w-[240px] h-[280px] sm:w-[360px] sm:h-[420px] lg:w-[484.37px] lg:h-[531px]">
+                  <Image
+                    src={aboutImages.vineyard}
+                    alt="Wine bottles from Wine Network estates"
+                    fill
+                    sizes="(max-width: 640px) 240px, (max-width: 1024px) 360px, 484px"
+                    className="object-cover object-center"
+                    unoptimized
+                  />
+                </div>
+              </div>
+            </div>
+          </div> */}
+           <figure className={`relative mx-auto w-full ${className}`.trim()}>
+              <div className="relative aspect-[461/511] w-full overflow-hidden bg-[#141414]">
+                <Image
+                  src={aboutImages.vineyard}
+                  alt="Wine bottles from Wine Network estates"
+                  fill
+                  sizes="(max-width: 1024px) 88vw, 461px"
+                  className={imageClassName}
+                />
+              </div>
+            </figure>
       </div>
     </section>
   );
@@ -201,7 +223,7 @@ function TransformationSection() {
       <div className="mx-auto max-w-[1282px]">
         <div className="grid gap-8 lg:h-[80px] lg:grid-cols-[613px_613px] lg:items-start lg:justify-between lg:gap-0">
           <TransformationHeading />
-          <p className="font-display font-light text-[18px] leading-[1.35] tracking-[-0.04em] text-white/60">
+          <p className="font-display font-light text-center sm:text-center lg:text-left text-[18px] leading-[1.35] tracking-[-0.04em] text-white/60">
             Today, the leadership reigns have been passed to our current CEO, <b className="text-[#ffffffd9]">Mr. Keith Tan</b>, who
             bring relationships from the South Australian winemaking industry. Under Keith&apos;s
             leadership, Wine Network has pivoted to empowering host restaurants through:
@@ -240,10 +262,10 @@ function TransformationSection() {
 function TransformationHeading() {
   return (
     <div className="font-display uppercase tracking-[-0.04em]">
-      <p className="text-[32px] font-display font-[350] leading-[0.86] text-[#616161] sm:text-[38px] lg:text-[56px]">
+      <p className="text-[32px] text-center sm:text-center lg:text-left font-display font-[350] leading-[0.86] text-[#616161] sm:text-[38px] lg:text-[56px]">
         Our
       </p>
-      <h2 className="mt-[10px] text-[32px] font-bold leading-[0.86] text-white sm:text-[38px] lg:text-[56px]">
+      <h2 className="mt-[10px] text-[32px] text-center sm:text-center lg:text-left font-bold leading-[0.86] text-white sm:text-[38px] lg:text-[56px]">
         Transformation
       </h2>
     </div>
@@ -293,10 +315,10 @@ function SplitHeading({
         centered ? "mx-auto text-center" : ""
       }`}
     >
-      <p className="text-[36px] font-normal leading-[1.02] text-[#616161] sm:text-[48px]">
+      <p className="text-[36px] text-center sm:text-center lg:text-left font-normal leading-[1.02] text-[#616161] sm:text-[48px]">
         {muted}
       </p>
-      <h1 className="text-[34px] font-bold leading-[1.08] text-white sm:text-[42px]">{strong}</h1>
+      <h1 className="text-[34px] text-center sm:text-center lg:text-left font-bold leading-[1.08] text-white sm:text-[42px]">{strong}</h1>
     </div>
   );
 }

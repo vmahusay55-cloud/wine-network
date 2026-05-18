@@ -9,17 +9,8 @@ export function Footer() {
   return (
     <footer
       id="contact"
-      className="relative isolate min-h-[360px] overflow-hidden bg-black sm:min-h-[380px] lg:aspect-[1440/420] lg:min-h-0"
-    >
-      <Image
-        src="/layout/footer.svg"
-        alt=""
-        fill
-        priority={false}
-        sizes="100vw"
-        className="pointer-events-none absolute inset-0 -z-10 select-none object-cover object-bottom"
-        unoptimized
-      />
+      className="relative isolate overflow-hidden bg-black "
+    >     
 
       <div className="relative z-10 mx-auto max-w-[1442px] px-6 pt-12 pb-28 sm:px-10 sm:pt-14 sm:pb-32 lg:px-[79px] lg:pt-[88px] lg:pb-[120px]">
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[26%_27%_25%_22%] lg:items-start lg:gap-0">
@@ -78,6 +69,10 @@ export function Footer() {
           </div>
         </div>
       </div>
+      <div
+        className="w-full h-[80px] sm:h-[160px] md:h-[200px] lg:h-[230px] bg-no-repeat bg-bottom bg-cover"
+        style={{ backgroundImage: "url('/layout/footer.svg')" }}
+      />
     </footer>
   );
 }
