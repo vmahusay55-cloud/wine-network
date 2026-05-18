@@ -85,17 +85,7 @@ function AboutIntroHeading() {
   );
 }
 
-function WorldSection({
-  src,
-  alt,
-  className = "",
-  imageClassName = "object-contain object-center",
-}: {
-  src: string;
-  alt: string;
-  className?: string;
-  imageClassName?: string;
-}) {
+function WorldSection() {
   return (
     <section className="about-world-bg relative isolate overflow-hidden px-6 py-20 sm:px-10 lg:h-[671px] lg:px-[78px] lg:py-[80px]">
       <div className="pointer-events-none absolute left-[-540px] top-2 h-[820px] w-[820px] -translate-y-1/2">
@@ -155,14 +145,14 @@ function WorldSection({
               </div>
             </div>
           </div> */}
-           <figure className={`relative mx-auto w-full ${className}`.trim()}>
+           <figure className="relative mx-auto w-full">
               <div className="relative aspect-[461/511] w-full overflow-hidden bg-[#141414]">
                 <Image
                   src={aboutImages.vineyard}
                   alt="Wine bottles from Wine Network estates"
                   fill
                   sizes="(max-width: 1024px) 88vw, 461px"
-                  className={imageClassName}
+                  className="object-contain object-center"
                 />
               </div>
             </figure>
