@@ -34,7 +34,7 @@ export function ClosingCtaV2({ href = "#contact" }: ClosingCtaV2Props) {
               textShadow: "0 2px 24px rgba(0,0,0,0.45)",
             }}
           >
-            <p className="font-display text-[20px] font-normal tracking-[-0.04em] text-[#616161] sm:text-[28px] lg:text-[56px]">
+            <p className="font-display text-[20px] font-[350] tracking-[-0.04em] text-[#616161] sm:text-[28px] lg:text-[56px]">
               The Revolution in
             </p>
             <h2 className="mt-2 whitespace-nowrap font-display text-[22px] font-bold tracking-[-0.04em] text-white sm:text-[32px] lg:text-[56px]">

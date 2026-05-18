@@ -49,15 +49,15 @@ function VintageSection() {
           <AboutIntroHeading />
           <div className="about-vintage-body font-light mt-[22px] space-y-[20px] font-display text-[18px] leading-[1.42] tracking-[-0.04em] text-white/60 lg:text-[18px]">
             <p className="about-vintage-paragraph">
-              The Wine Network story began around a table shared by friends. Founded in 2001 by our
-              Chairman Emeritus, Mr. Thomas Teo, we started as a humble community of enthusiasts
+              The Wine Network story began around a table shared by friends. Founded in <b className="text-[#ffffffd9]">2001</b> by our
+              Chairman Emeritus, <b className="text-[#ffffffd9]">Mr. Thomas Teo</b>, we started as a humble community of enthusiasts
               bound by a singular passion for the vine.
             </p>
 
             <p className="about-vintage-paragraph about-vintage-paragraph-2">
               As a true pioneer of the Singapore hospitality scene, Mr. Teo saw potential where
               others saw a smattering of rug and antique shops, establishing our first wine bar in
-              the then-rustic enclave of Dempsey. That first pour sparked a movement, transforming a
+              the then-rustic enclave of <b className="text-[#ffffffd9]">Dempsey</b>. That first pour sparked a movement, transforming a
               quiet corner of Singapore into a premier destination for epicureans.
             </p>
           </div>
@@ -108,8 +108,8 @@ function WorldSection() {
             </p>
 
             <p>
-              Starting with the bold, sun-drenched profiles of Stellenbosch wines, we later expanded
-              to the prestigious hills of Piedmont and riding the wave of the Super Tuscan movement,
+              Starting with the bold, sun-drenched profiles of <b className="text-[#ffffffd9]">Stellenbosch</b> wines, we later expanded
+              to the prestigious hills of <b className="text-[#ffffffd9]">Piedmont</b> and riding the wave of the <b className="text-[#ffffffd9]">Super Tuscan</b> movement,
               bringing the avant-garde spirit of Italian winemaking to Singapore wine lovers.
             </p>
           </div>
@@ -167,9 +167,9 @@ function SentosaSection() {
         unoptimized
       />
 
-      <div className="mx-auto font-light flex max-w-[928px] flex-col gap-7 font-display text-[18px] sm:text-[22px] leading-[1.45] tracking-[-0.04em] text-white/60">
+      <div className="mx-auto font-light flex max-w-[928px] flex-col gap-7 font-display text-[18px] sm:text-[22px] leading-[1.45] tracking-[-0.04em] text-white/70">
         <p>
-          In 2022, we took our expertise to the shores of Sentosa with the launch of Suburbia, a
+          In 2022, we took our expertise to the shores of Sentosa with the launch of <b className="text-[#ffffffd9]">Suburbia</b>, a
           full-scale, wine-themed culinary experience. Suburbia was a masterclass in atmospheric
           dining, serving as a vibrant hub and event space. The closure of Suburbia wasn&apos;t an end, but a catalyst for evolution.</p>
       </div>
@@ -200,12 +200,12 @@ function TransformationSection() {
         <div className="grid gap-8 lg:h-[80px] lg:grid-cols-[613px_613px] lg:items-start lg:justify-between lg:gap-0">
           <TransformationHeading />
           <p className="font-display font-light text-[18px] leading-[1.35] tracking-[-0.04em] text-white/60">
-            Today, the leadership reigns have been passed to our current CEO, Mr. Keith Tan, who
+            Today, the leadership reigns have been passed to our current CEO, <b className="text-[#ffffffd9]">Mr. Keith Tan</b>, who
             bring relationships from the South Australian winemaking industry. Under Keith&apos;s
             leadership, Wine Network has pivoted to empowering host restaurants through:
           </p>
         </div>
-        <div className="mt-10 grid gap-3 lg:grid-cols-2">
+        <div className="mt-[70px] grid gap-3 lg:grid-cols-2">
           {transformationCards.map((card) => (
             <article
               key={card.title}
@@ -218,10 +218,15 @@ function TransformationSection() {
                 {card.title}
               </h3>
 
-              <p className="font-display font-light text-[18px] leading-[1.35] tracking-[-0.04em] text-white/60 w-full">
-                {card.description}
+              <p className="font-display font-light text-[16px] leading-[1.35] tracking-[-0.04em] text-white/60 w-full">
+                {card.description.split("|").map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
               </p>
-</div>
+            </div>
             </article>
           ))}
         </div>
@@ -233,7 +238,7 @@ function TransformationSection() {
 function TransformationHeading() {
   return (
     <div className="font-display uppercase tracking-[-0.04em]">
-      <p className="text-[32px] font-normal leading-[0.86] text-[#616161] sm:text-[38px] lg:text-[56px]">
+      <p className="text-[32px] font-display font-[350] leading-[0.86] text-[#616161] sm:text-[38px] lg:text-[56px]">
         Our
       </p>
       <h2 className="mt-[10px] text-[32px] font-bold leading-[0.86] text-white sm:text-[38px] lg:text-[56px]">
