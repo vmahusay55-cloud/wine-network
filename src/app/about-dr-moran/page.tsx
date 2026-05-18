@@ -161,7 +161,7 @@ function KeyPhilosophySection() {
           ))}
         </div>
 
-        <p className="mt-3 font-light max-w-[1000px] text-center font-display text-[22px] leading-[1.15] text-white/60 lg:block">
+        <p className="mt-3 font-light max-w-[1000px] text-center font-display text-[22px] leading-[1.15] text-white/70 lg:block">
           The range spans blanc de blancs sparkling wine, chardonnay, pinot noir, syrah, barbera,<br />
           tempranillo, cabernet sauvignon and rosé, all from Adelaide Hills fruit and all defined by one<br />
           overriding philosophy: extended time on lees. Where most producers move wines to bottle as<br />

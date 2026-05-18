@@ -8,7 +8,7 @@ import { aboutStats, transformationCards } from "@/lib/about-data";
 
 const aboutImages = {
   founder: "/images/about/container-thomas.png",
-  vineyard: "/images/about/frame-2085665953.png",
+  vineyard: "/images/about/frame2.svg",
   sentosa: "/images/about/image-40.svg",
 };
 
@@ -129,17 +129,19 @@ function WorldSection() {
         <div className="relative aspect-[460/511] w-full max-w-[460px] justify-self-center lg:translate-x-[-28px]">
           <div
             aria-hidden
-            className="absolute left-[5%] top-0 h-[91%] w-[95%] border border-white/55"
+            className="absolute left-[-5%] top-0 h-[103%] w-[105%] border border-white/55"
           />
-          <div className="absolute left-0 top-[4%] h-[89%] w-[92%] overflow-hidden">
+          <div className="absolute right-5 top-[4%]  overflow-hidden">
+           <div className="relative w-[484.37px] h-[531px]">
             <Image
               src={aboutImages.vineyard}
               alt="Wine bottles from Wine Network estates"
               fill
-              sizes="(max-width: 1024px) 90vw, 460px"
-              className="scale-[1.095] object-cover object-center"
+              sizes="(max-width: 1024px) 90vw, 438px"
+              className="object-cover object-center"
               unoptimized
             />
+          </div>
           </div>
         </div>
       </div>
