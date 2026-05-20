@@ -35,9 +35,10 @@ export function IconCard({
         {title}
       </h3>
       <p className="mt-3 text-[13px] font-light leading-[18px] text-white/55">
-        {descriptionLines.map((line) => (
-          <span key={line} className="block whitespace-nowrap">
+        {descriptionLines.map((line, i) => (
+          <span key={line} className="lg:block lg:whitespace-nowrap">
             {line}
+            {i < descriptionLines.length - 1 ? " " : ""}
           </span>
         ))}
       </p>
