@@ -2,10 +2,9 @@ export const advantageCards = [
   {
     title: "Margins",
     description: [
-      "By decoupling from retail price-tracking",
-      "you capture the full value of your pour.",
-      "Private labeling eliminates the 'brand tax',",
-      "allowing significantly higher margins",
+      "By decoupling from retail price-tracking you capture the",
+      "full value of your pour. Private labeling eliminates the",
+      "'brand tax', allowing for significantly higher margins",
       "without sacrificing quality.",
     ],
     iconSrc: "/icon/advantage-margins.svg",
@@ -15,9 +14,8 @@ export const advantageCards = [
   {
     title: "Curations",
     description: [
-      "Instead of teaching staff the history of",
-      "an outside vineyard, they speak to why",
-      "custom-blended-to",
+      "Instead of teaching staff the history of an outside",
+      "vineyard, they speak to why custom-blended-to",
       "compliment your menu.",
     ],
     iconSrc: "/icon/advantage-curations.svg",
@@ -27,9 +25,8 @@ export const advantageCards = [
   {
     title: "Loyalty",
     description: [
-      "When a guest in love with your wines,",
-      "they can't find it anywhere else.",
-      "You move the value from the producer's",
+      "When a guest in love with your wines, they can't find it",
+      "anywhere else. You move the value from the producer's",
       "brand to your own.",
     ],
     iconSrc: "/icon/advantage-loyalty.svg",
