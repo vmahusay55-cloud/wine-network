@@ -20,7 +20,7 @@ export function AdvantageSection() {
 
   return (
     <section className="section-shell section-pattern relative overflow-hidden isolate pb-16 sm:pb-20 lg:pb-24">
-        <div className="mx-auto max-w-[1500px] px-6">
+        <div className="mx-auto max-w-[1680px] px-6">
         {/* Heading + glow divider */}
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           {/* <Image
@@ -38,15 +38,15 @@ export function AdvantageSection() {
         </div>
 
         {/* 3-column staggered grid */}
-        <div className="mt-14 grid gap-6 lg:grid-cols-[480px_480px_480px] lg:items-start lg:justify-center lg:gap-6">
-          {/* Col 1 - Margins (lowered) */}
-          <div className="lg:mt-16">
+        <div className="mt-14 grid gap-6 lg:grid-cols-[540px_540px_540px] lg:items-center lg:justify-center lg:gap-7">
+          {/* Col 1 - Margins (centered vertically vs. center column) */}
+          <div>
             <IconCard {...margins} />
           </div>
 
           {/* Col 2 - description + Curations stacked */}
           <div className="flex flex-col gap-6">
-            <p className="border border-white/12 bg-white/[0.02] p-6 text-[16px] font-extralight leading-[22px] text-white lg:w-[480px] lg:px-7 lg:py-7">
+            <p className="border border-white/12 bg-white/[0.02] p-6 text-[18px] font-extralight leading-[26px] text-white lg:w-[540px] lg:px-8 lg:py-8">
               {descriptionLines.map((line) => (
                 <span key={line} className="block whitespace-nowrap">
                   {line}
@@ -56,8 +56,8 @@ export function AdvantageSection() {
             <IconCard {...curations} />
           </div>
 
-          {/* Col 3 - Loyalty (lowered) */}
-          <div className="lg:mt-16">
+          {/* Col 3 - Loyalty (centered vertically vs. center column) */}
+          <div>
             <IconCard {...loyalty} />
           </div>
         </div>
