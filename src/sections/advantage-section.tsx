@@ -12,29 +12,27 @@ import { advantageCards } from "@/lib/home-data";
 export function AdvantageSection() {
   const [margins, curations, loyalty] = advantageCards;
   const descriptionLines = [
-    "In an era where guests can price-check",
-    "any bottle on their phone, traditional",
-    'wine labels often create a "margin ceiling"',
-    "for your business. We are offering a",
-    "strategic pivot that replaces third-party",
-    "brands with high-quality, exclusive private",
-    "labels, reclaiming both your profit and",
-    "your brand narrative.",
+    "In an era where guests can price-check any bottle on",
+    "their phone, traditional wine labels often create a",
+    '"margin ceiling" for your business. We are offering a',
+    "strategic pivot that replaces third-party brands with",
+    "high-quality, exclusive private labels, reclaiming both",
+    "your profit and your brand narrative.",
   ];
 
   return (
-    <section className="section-shell section-pattern relative overflow-hidden isolate pb-16 sm:pb-20 lg:pb-24">
-        <div className="mx-auto max-w-[1208px] px-6">
+    <section className="section-shell section-pattern relative overflow-hidden isolate pt-16 pb-16 sm:pt-20 sm:pb-20 lg:pt-24 lg:pb-24">
+        <div className="mx-auto max-w-[1680px] px-6">
         {/* Heading + glow divider */}
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-          {/* <Image
+          <Image
             src="/icon/divider-glow.svg"
             alt=""
             width={2}
             height={113}
             unoptimized
-            className="h-[96px] w-px lg:h-[113px]"
-          /> */}
+            className="h-[96px] w-[2px] lg:h-[113px] lg:w-[2px]"
+          />
           <h2 className="mt-6 font-display text-[36px] font-light uppercase tracking-[0.107em] leading-[1.1] text-white/60 sm:text-[44px] lg:text-[56px] lg:leading-[62px]">
             <span className="block font-extralight">The Unlabelled</span>
             <span className="block font-bold text-white">Advantage</span>
@@ -42,34 +40,26 @@ export function AdvantageSection() {
         </div>
 
         {/* 3-column staggered grid */}
-        <div className="mt-14 grid gap-6 lg:grid-cols-[384px_384px_384px] lg:items-start lg:justify-center lg:gap-7">
-          {/* Col 1 - Margins (lowered) */}
-          <div className="lg:mt-16">
+        <div className="mt-14 grid gap-6 lg:grid-cols-[540px_540px_540px] lg:items-center lg:justify-center lg:gap-7">
+          {/* Col 1 - Margins (centered vertically vs. center column) */}
+          <div>
             <IconCard {...margins} />
           </div>
 
           {/* Col 2 - description + Curations stacked */}
           <div className="flex flex-col gap-6">
-            <div className="border border-white/12 bg-white/[0.02] p-6 text-[16px] leading-6 text-white/72 lg:min-h-[224px] lg:w-[384px] lg:px-8 lg:py-8 lg:leading-5">
-              <span className="lg:hidden">
-                In an era where guests can price-check any bottle on their phone, traditional wine
-                labels often create a &quot;margin ceiling&quot; for your business. We are offering
-                a strategic pivot that replaces third-party brands with high-quality, exclusive
-                private labels, reclaiming both your profit and your brand narrative.
-              </span>
-              <span className="block font-extralight text-[#FFFFFF] lg:block">
-                {descriptionLines.map((line) => (
-                  <span key={line} className="block">
-                    {line}
-                  </span>
-                ))}
-              </span>
-            </div>
+            <p className="border border-white/12 bg-white/[0.02] p-6 text-[18px] font-extralight leading-[26px] text-white lg:w-[540px] lg:px-8 lg:py-8">
+              {descriptionLines.map((line) => (
+                <span key={line} className="block whitespace-nowrap">
+                  {line}
+                </span>
+              ))}
+            </p>
             <IconCard {...curations} />
           </div>
 
-          {/* Col 3 - Loyalty (lowered) */}
-          <div className="lg:mt-16">
+          {/* Col 3 - Loyalty (centered vertically vs. center column) */}
+          <div>
             <IconCard {...loyalty} />
           </div>
         </div>
