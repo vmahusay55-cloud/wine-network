@@ -225,7 +225,7 @@ function TransformationSection() {
             </span>
           </p>
         </div>
-        <div className="mt-[70px] grid gap-3 lg:grid-cols-2">
+        <div className="mt-[36px] grid gap-3 lg:grid-cols-2">
           {transformationCards.map((card) => (
             <article
               key={card.title}
