@@ -205,13 +205,13 @@ function SentosaHeading() {
 
 function TransformationSection() {
   return (
-    <section className="bg-[#151515] px-6 py-16 sm:px-10 lg:px-20 lg:py-16">
+    <section className="bg-[#151515] px-6 py-10 sm:px-10 sm:py-12 lg:px-20 lg:py-14">
       <div className="pointer-events-none absolute top-1/2 left-[-400px]
          z-0 h-[520px] w-[520px]
          -translate-y-1/2 rounded-full
          bg-white/20 blur-[220px]"></div>
-      <div className="mx-auto max-w-[1282px]">
-        <div className="grid gap-8 lg:h-[80px] lg:grid-cols-[613px_613px] lg:items-start lg:justify-between lg:gap-0">
+      <div className="mx-auto max-w-[1442px]">
+        <div className="grid gap-8 lg:grid-cols-[680px_680px] lg:items-baseline lg:justify-between lg:gap-0">
           <TransformationHeading />
           <p className="font-display font-light text-center sm:text-center lg:text-left text-[18px] leading-[1.35] tracking-[-0.04em] text-white/60">
             Today, the leadership reigns have been passed to our current CEO, <b className="text-[#ffffffd9]">Mr. Keith Tan</b>, who
