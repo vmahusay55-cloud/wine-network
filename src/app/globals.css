@@ -750,7 +750,7 @@ button {
   background-color: #151515;
   background-image:
     linear-gradient(180deg, rgba(21, 21, 21, 0.9), rgba(21, 21, 21, 0.95)),
-    url("/images/revenue/background.png");
+    url("/images/revenue/background.webp");
   background-position: center;
   background-repeat: repeat;
   background-size: auto, 1100px;
@@ -765,7 +765,7 @@ button {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("/images/revenue/background.png");
+  background-image: url("/images/revenue/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1442px 671px;

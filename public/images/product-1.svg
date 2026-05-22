@@ -1,9 +1,0 @@
-<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="1000" fill="#E9D6C6"/>
-  <rect x="312" y="148" width="176" height="600" rx="88" fill="#48121F"/>
-  <rect x="354" y="72" width="92" height="132" rx="34" fill="#6F1A2E"/>
-  <rect x="330" y="434" width="140" height="154" rx="22" fill="#F5EDE3"/>
-  <text x="400" y="488" text-anchor="middle" fill="#6F1A2E" font-size="32" font-family="Georgia, serif">BAROLO</text>
-  <text x="400" y="534" text-anchor="middle" fill="#8E796D" font-size="18" font-family="Arial, sans-serif">Reserve 2019</text>
-  <circle cx="620" cy="200" r="72" fill="#D9A86C" fill-opacity="0.35"/>
-</svg>

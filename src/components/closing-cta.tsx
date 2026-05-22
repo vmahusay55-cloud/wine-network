@@ -8,7 +8,7 @@ export function ClosingCta({ href = "#contact" }: ClosingCtaProps) {
   return (
     <section className="relative isolate overflow-hidden">
       <Image
-        src="/images/closing/restaurant-33e9f8.png"
+        src="/images/closing/restaurant-33e9f8.webp"
         alt=""
         fill
         sizes="100vw"
