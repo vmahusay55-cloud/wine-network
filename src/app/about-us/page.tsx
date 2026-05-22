@@ -9,7 +9,7 @@ import { aboutStats, transformationCards } from "@/lib/about-data";
 const aboutImages = {
   founder: "/images/about/container-thomas.webp",
   vineyard: "/images/about/frame-2.webp",
-  sentosa: "/images/about/image-40.svg",
+  sentosa: "/images/about/image-40.webp",
 };
 
 export default function AboutUsPage() {

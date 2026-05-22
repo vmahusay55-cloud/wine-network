@@ -25,14 +25,14 @@ export function AdvantageSection() {
         <div className="mx-auto max-w-[1200px] px-6">
         {/* Heading + glow divider */}
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-          <Image
+          {/* <Image
             src="/icon/divider-glow.svg"
             alt=""
             width={2}
             height={113}
             unoptimized
             className="h-[96px] w-[2px] lg:h-[113px] lg:w-[2px]"
-          />
+          /> */}
           <h2 className="mt-6 font-display text-[36px] font-light uppercase tracking-[0.107em] leading-[1.1] text-white/60 sm:text-[44px] lg:text-[56px] lg:leading-[62px]">
             <span className="block font-extralight">The Unlabelled</span>
             <span className="block font-bold text-white">Advantage</span>
