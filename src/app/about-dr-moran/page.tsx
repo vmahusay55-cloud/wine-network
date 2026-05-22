@@ -8,13 +8,17 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 const moranImages = {
   pattern: "/images/moran/pattern.png",
   heroBackground: "/images/moran/Group 1.png",
-  hero: "/images/moran/Frame 2085665953.png",
-  philosophy: "/images/moran/image 40.png",
-  terroir: "/images/moran/Frame2.png",
+  hero: "/images/moran/Frame 2085665953.webp",
+  philosophy: "/images/moran/image 40.webp",
+  terroir: "/images/moran/Frame2.webp",
 };
 
 const heroCopyLines = [
-  "Dr. Martin Moran is an Argentinian-born winemaker and research scientist based in Hahndorf in the Adelaide Hills and has been making wines since 2010. Moran studied winemaking and viticulture in Argentina, worked vintages in the United States, then moved to Australia where he completed a PhD in viticulture and oenology at the University of Adelaide.",
+  "Dr. Martin Moran is an Argentinian-born winemaker and research scientist based in",
+  "Hahndorf in the Adelaide Hills and has been making wines since 2010. Moran studied",
+  "winemaking and viticulture in Argentina, worked vintages in the United States, then",
+  "moved to Australia where he completed a PhD in viticulture and oenology at the",
+  "University of Adelaide.",
 ];
 
 const philosophyQuoteLines = [
@@ -76,11 +80,10 @@ function HeroSection() {
         fill
         sizes="100vw"
         className="-z-10 object-cover object-center opacity-[0.93]"
-        unoptimized
       />
 
       <div className="mx-auto flex max-w-[1296px] flex-col-reverse gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
-        <div className="max-w-[560px] pt-2 lg:max-w-[560px] lg:pt-0 sm:mx-auto">
+        <div className="max-w-[560px] pt-2 lg:max-w-[720px] lg:pt-0 sm:mx-auto">
           <p className="font-display font-[350] text-center sm:text-center lg:text-left text-[24px] uppercase leading-[0.95] tracking-[-0.04em] text-[#747474] sm:text-[32px] lg:text-[48px]">
             About
           </p>
@@ -94,9 +97,9 @@ function HeroSection() {
             Australia, where he completed a PhD in viticulture and oenology at the University of
             Adelaide.
           </p>
-          <div className="mt-6 font-light hidden max-w-[510px] font-display text-[18px] leading-[1.48] tracking-[-0.04em] text-white/70 lg:block">
+          <div className="mt-6 font-light hidden font-display text-[18px] leading-[1.48] tracking-[-0.04em] text-white/70 lg:block lg:w-fit">
             {heroCopyLines.map((line, i) => (
-              <span key={i} className="block text-white/60">
+              <span key={i} className="block whitespace-nowrap text-white/60">
                 {line.split(name).map((part, j) => (
                   <span key={j}>
                     {j > 0 && (
@@ -194,7 +197,6 @@ function TerroirSection() {
         fill
         sizes="100vw"
         className="-z-10 object-cover object-center opacity-[0.28]"
-        unoptimized
       />
 
       <div className="mx-auto flex max-w-[1296px] flex-col gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">

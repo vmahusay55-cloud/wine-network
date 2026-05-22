@@ -22,7 +22,7 @@ export function IconCard({
   const descriptionLines = Array.isArray(description) ? description : [description];
 
   return (
-    <article className="motion-card w-full border-l-2 border-white/12 bg-[#201F1F] px-6 py-6 text-left lg:min-h-[240px] lg:w-[380px] lg:px-5 lg:py-5">
+    <article className="motion-card w-full border-l-2 border-white/12 bg-[#201F1F] px-6 py-5 text-left lg:w-[380px] lg:px-7 lg:py-7">
       <Image
         src={iconSrc}
         alt=""

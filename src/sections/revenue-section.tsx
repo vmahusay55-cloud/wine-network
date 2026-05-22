@@ -14,7 +14,7 @@ export function RevenueSection() {
       />
       {/* Figma fill_1SQLOZ — Wine pattern texture at 1.5% opacity (just a hint of grain on top) */}
       <div
-        className="absolute inset-0 -z-10 bg-[url('/images/revenue/background.png')] bg-cover bg-center bg-no-repeat opacity-[0.015]"
+        className="absolute inset-0 -z-10 bg-[url('/images/revenue/background.webp')] bg-cover bg-center bg-no-repeat opacity-[0.015]"
         aria-hidden
       />
 

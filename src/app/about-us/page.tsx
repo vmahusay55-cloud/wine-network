@@ -7,8 +7,8 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 import { aboutStats, transformationCards } from "@/lib/about-data";
 
 const aboutImages = {
-  founder: "/images/about/container-thomas.png",
-  vineyard: "/images/about/frame-2.png",
+  founder: "/images/about/container-thomas.webp",
+  vineyard: "/images/about/frame-2.webp",
   sentosa: "/images/about/image-40.svg",
 };
 
@@ -98,20 +98,35 @@ function WorldSection() {
           }}
         />
       </div>
-      <div className="relative z-10 mx-auto grid max-w-[1286px] gap-12 lg:grid-cols-[560px_460px] lg:items-center lg:justify-between lg:gap-12">
+      <div className="relative z-10 mx-auto grid max-w-[1286px] gap-12 lg:grid-cols-[720px_460px] lg:items-center lg:justify-between lg:gap-12">
         <div>
           <SplitHeading muted="From" strong="Across The World" />
-          <div className="mt-7 sm:mx-auto text-center sm:text-center lg:text-left font-light max-w-[560px] space-y-6 font-display text-[18px] leading-[1.45] tracking-[-0.04em] text-white/60">
-            <p>
-              Recognizing a gap in the market for both quality and accessibility, we expanded into
-              the importing and distribution in 2005.
-            </p>
+          <div className="mt-7 sm:mx-auto lg:mx-0 text-center sm:text-center lg:text-left font-light max-w-[560px] space-y-6 font-display text-[18px] leading-[1.45] tracking-[-0.04em] text-white/60 lg:max-w-none lg:w-fit">
+            <div className="lg:hidden space-y-6">
+              <p>
+                Recognizing a gap in the market for both quality and accessibility, we expanded into
+                the importing and distribution in 2005.
+              </p>
 
-            <p>
-              Starting with the bold, sun-drenched profiles of <b className="text-[#ffffffd9]">Stellenbosch</b> wines, we later expanded
-              to the prestigious hills of <b className="text-[#ffffffd9]">Piedmont</b> and riding the wave of the <b className="text-[#ffffffd9]">Super Tuscan</b> movement,
-              bringing the avant-garde spirit of Italian winemaking to Singapore wine lovers.
-            </p>
+              <p>
+                Starting with the bold, sun-drenched profiles of <b className="text-[#ffffffd9]">Stellenbosch</b> wines, we later expanded
+                to the prestigious hills of <b className="text-[#ffffffd9]">Piedmont</b> and riding the wave of the <b className="text-[#ffffffd9]">Super Tuscan</b> movement,
+                bringing the avant-garde spirit of Italian winemaking to Singapore wine lovers.
+              </p>
+            </div>
+
+            <div className="hidden lg:block space-y-6">
+              <p>
+                <span className="block whitespace-nowrap">Recognizing a gap in the market for both quality and accessibility, we expanded into the</span>
+                <span className="block whitespace-nowrap">importing and distribution in 2005.</span>
+              </p>
+
+              <p>
+                <span className="block whitespace-nowrap">Starting with the bold, sun-drenched profiles of <b className="text-[#ffffffd9]">Stellenbosch</b> wines, we later expanded</span>
+                <span className="block whitespace-nowrap">to the prestigious hills of <b className="text-[#ffffffd9]">Piedmont</b> and riding the wave of the <b className="text-[#ffffffd9]">Super Tuscan</b> movement,</span>
+                <span className="block whitespace-nowrap">bringing the avant-garde spirit of Italian winemaking to Singapore wine lovers.</span>
+              </p>
+            </div>
           </div>
           <div className="mt-12 flex flex-wrap gap-16 justify-center  sm:justify-center lg:justify-start">
             {aboutStats.map((stat) => (
@@ -139,7 +154,6 @@ function WorldSection() {
                     fill
                     sizes="(max-width: 640px) 240px, (max-width: 1024px) 360px, 484px"
                     className="object-cover object-center"
-                    unoptimized
                   />
                 </div>
               </div>
@@ -290,7 +304,6 @@ function FigureCard({
         priority={priority}
         sizes="(max-width: 1024px) 90vw, 421px"
         className="object-contain"
-        unoptimized
       />
     </figure>
   );

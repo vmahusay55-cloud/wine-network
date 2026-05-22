@@ -1,9 +1,0 @@
-<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="1000" fill="#E7DED5"/>
-  <rect x="318" y="142" width="164" height="610" rx="82" fill="#26313D"/>
-  <rect x="358" y="72" width="84" height="126" rx="30" fill="#445566"/>
-  <rect x="334" y="426" width="132" height="170" rx="22" fill="#F7F2EA"/>
-  <text x="400" y="492" text-anchor="middle" fill="#26313D" font-size="28" font-family="Georgia, serif">PINOT</text>
-  <text x="400" y="534" text-anchor="middle" fill="#7A6A60" font-size="18" font-family="Arial, sans-serif">Sonoma Coast</text>
-  <circle cx="188" cy="224" r="84" fill="#7A182D" fill-opacity="0.18"/>
-</svg>
