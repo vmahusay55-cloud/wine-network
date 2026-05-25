@@ -48,9 +48,9 @@ export function AdvantageSection() {
 
           {/* Col 2 - description + Curations stacked */}
           <div className="flex flex-col gap-6">
-            <p className="border border-white/12 bg-white/[0.02] p-6 text-[13px] font-extralight leading-[18px] text-white lg:w-fit lg:px-7 lg:py-8">
+            <p className="border bg-white/[0.02] p-6 text-[13px] font-extralight leading-[18px] text-white lg:w-fit lg:px-7 lg:py-8">
               {descriptionLines.map((line, i) => (
-                <span key={line} className="lg:block lg:whitespace-nowrap">
+                <span key={line} className="lg:block text-white lg:whitespace-nowrap">
                   {line}
                   {i < descriptionLines.length - 1 ? " " : ""}
                 </span>
