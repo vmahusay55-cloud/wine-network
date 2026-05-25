@@ -6,14 +6,14 @@ type ClosingCtaV2Props = {
 
 export function ClosingCtaV2({ href = "#contact" }: ClosingCtaV2Props) {
   return (
-    <section className="relative isolate overflow-hidden bg-[#151515]">
+    <section id="contact-cta" className="relative isolate overflow-hidden bg-[#151515]">
       <Image
         src="/images/closing/Group 1.png"
         alt=""
         fill
         sizes="100vw"
         priority={false}
-        className="-z-20 object-cover object-[center_18%]"
+        className="-z-20 object-cover object-[center_18%] opacity-45"
       />
       <div
         className="absolute inset-0 -z-10"

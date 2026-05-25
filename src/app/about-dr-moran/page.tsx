@@ -90,14 +90,14 @@ function HeroSection() {
           <h1 className="mt-1 font-noyh text-[32px] text-center sm:text-center lg:text-left font-black uppercase leading-[0.98] text-white sm:text-[44px] lg:whitespace-nowrap lg:text-[56px]">
             Dr. Martin Moran
           </h1>
-          <p className="mt-6 max-w-[520px] text-center sm:text-center lg:text-left font-display text-[18px] leading-[1.48] tracking-[-0.04em] text-white/70 sm:text-[18px] lg:hidden">
+          <p className="mt-6 max-w-[520px] text-center sm:text-center lg:text-left font-display text-[20px] leading-[1.48] tracking-[-0.04em] text-white/70 lg:hidden">
             Dr. Martin Moran is an Argentinian-born winemaker and research scientist based in
             Hahndorf in the Adelaide Hills. He has been making wine since 2010, and studied
             winemaking and viticulture in Argentina before moving to the United States, then to
             Australia, where he completed a PhD in viticulture and oenology at the University of
             Adelaide.
           </p>
-          <div className="mt-6 font-light hidden font-display text-[18px] leading-[1.48] tracking-[-0.04em] text-white/70 lg:block lg:w-fit">
+          <div className="mt-6 font-light hidden font-display text-[20px] leading-[1.48] tracking-[-0.04em] text-white/70 lg:block lg:w-fit">
             {heroCopyLines.map((line, i) => (
               <span key={i} className="block whitespace-nowrap text-white/60">
                 {line.split(name).map((part, j) => (
@@ -164,7 +164,7 @@ function KeyPhilosophySection() {
           ))}
         </div>
 
-        <p className="mt-3 font-light max-w-[1000px] text-center font-display text-[18px] sm:text-[18px] leading-[1.15] text-white/70 lg:block">
+        <p className="mt-3 font-light max-w-[1000px] text-center font-display text-[20px] leading-[1.15] text-white/70 lg:block">
           The range spans blanc de blancs sparkling wine, chardonnay, pinot noir, syrah, barbera,<span className="hidden sm:inline"><br/></span>
           tempranillo, cabernet sauvignon and rosé, all from Adelaide Hills fruit and all defined by one<span className="hidden sm:inline"><br/></span>
           overriding philosophy: extended time on lees. Where most producers move wines to bottle as<span className="hidden sm:inline"><br/></span>
@@ -185,7 +185,7 @@ function KeyPhilosophySection() {
 
 function TerroirSection() {
   return (
-    <section className="relative isolate overflow-hidden px-6 py-20 sm:px-10 lg:px-[78px] lg:py-[112px]">
+    <section className="relative isolate overflow-hidden py-20 lg:py-[112px]">
       <div className="pointer-events-none absolute top-2/3 left-[-400px]
          z-0 h-[420px] w-[520px]
          -translate-y-1/2 rounded-full
@@ -199,8 +199,8 @@ function TerroirSection() {
         className="-z-10 object-cover object-center opacity-[0.28]"
       />
 
-      <div className="mx-auto flex max-w-[1296px] flex-col gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
-        <div className="max-w-[560px] lg:max-w-[510px]">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-12 px-5 sm:px-10 lg:grid-cols-[1fr_461px] lg:items-center lg:gap-[112px] lg:pl-[88px] lg:pr-20">
+        <div className="max-w-[560px] lg:max-w-none lg:min-w-0">
           <p className="font-display font-[350] text-[24px] uppercase leading-[0.95] tracking-[-0.04em] text-[#747474] sm:text-[32px] lg:text-[48px]">
             The Terroir:
           </p>
@@ -208,7 +208,7 @@ function TerroirSection() {
             Adelaide Hills
           </h2>
 
-         <div className="mt-6 font-[350] space-y-5 font-display text-[18px] leading-[1.30] tracking-[-0.04em] text-white/70 lg:max-w-[470px]">
+         <div className="mt-6 font-[350] space-y-5 font-display text-[20px] leading-[1.30] tracking-[-0.04em] text-white/70 lg:max-w-[470px]">
           <div className="lg:hidden">
             <p>
               The chardonnay and pinot noir are both sourced from the ex-Lenswood Research
