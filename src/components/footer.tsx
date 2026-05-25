@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { ContactLink } from "@/components/contact-link";
 import { footerLinks } from "@/lib/home-data";
 
 const footerTextClass =
@@ -7,23 +8,28 @@ const footerTextClass =
 
 export function Footer() {
   return (
-    <footer
-      id="contact"
-      className="relative isolate overflow-hidden bg-black "
-    >     
-
-      <div className="relative z-10 mx-auto max-w-[1442px] px-6 pt-12 pb-28 sm:px-10 sm:pt-14 sm:pb-32 lg:px-[79px] lg:pt-[88px] lg:pb-[120px]">
+    <footer className="relative isolate overflow-hidden bg-black">
+      <div
+        id="contact"
+        className="relative z-10 mx-auto max-w-[1442px] px-6 pt-12 pb-14 sm:px-10 sm:pt-14 sm:pb-16 lg:px-[79px] lg:pt-[88px] lg:pb-[60px]"
+      >
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[26%_27%_25%_22%] lg:items-start lg:gap-0">
           <FooterColumn label="Quick Links">
-            {footerLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className={footerTextClass}
-              >
-                {link.label}
-              </a>
-            ))}
+            {footerLinks.map((link) =>
+              link.href === "#contact" ? (
+                <ContactLink key={link.label} className={footerTextClass}>
+                  {link.label}
+                </ContactLink>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className={footerTextClass}
+                >
+                  {link.label}
+                </a>
+              ),
+            )}
           </FooterColumn>
 
           <FooterColumn label="Contact Us">

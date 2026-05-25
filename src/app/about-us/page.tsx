@@ -101,7 +101,7 @@ function WorldSection() {
       <div className="relative z-10 mx-auto grid max-w-[1286px] gap-12 lg:grid-cols-[720px_460px] lg:items-center lg:justify-between lg:gap-12">
         <div>
           <SplitHeading muted="From" strong="Across The World" />
-          <div className="mt-7 sm:mx-auto lg:mx-0 text-center sm:text-center lg:text-left font-light max-w-[560px] space-y-6 font-display text-[18px] leading-[1.45] tracking-[-0.04em] text-white/60 lg:max-w-none lg:w-fit">
+          <div className="mt-7 sm:mx-auto lg:mx-0 text-center sm:text-center lg:text-left font-light max-w-[560px] space-y-6 font-display text-[20px] leading-[1.45] tracking-[-0.04em] text-white/60 lg:max-w-none lg:w-fit">
             <div className="lg:hidden space-y-6">
               <p>
                 Recognizing a gap in the market for both quality and accessibility, we expanded into
@@ -195,7 +195,7 @@ function SentosaSection() {
         unoptimized
       />
 
-      <div className="mx-auto font-light flex max-w-[928px] flex-col gap-7 font-display text-[18px] sm:text-[22px] leading-[1.45] tracking-[-0.04em] text-white/70">
+      <div className="mx-auto font-light flex max-w-[928px] flex-col gap-7 font-display text-[20px] leading-[1.45] tracking-[-0.04em] text-white/70">
         <p>
           In 2022, we took our expertise to the shores of Sentosa with the launch of <b className="text-[#ffffffd9]">Suburbia</b>, a
           full-scale, wine-themed culinary experience. Suburbia was a masterclass in atmospheric
@@ -227,7 +227,7 @@ function TransformationSection() {
       <div className="mx-auto max-w-[1442px]">
         <div className="grid gap-8 lg:grid-cols-[680px_680px] lg:items-baseline lg:justify-between lg:gap-0">
           <TransformationHeading />
-          <p className="font-display font-light text-center sm:text-center lg:text-left text-[18px] leading-[1.35] tracking-[-0.04em] text-white/60">
+          <p className="font-display font-light text-center sm:text-center lg:text-left text-[20px] leading-[1.35] tracking-[-0.04em] text-white/60">
             <span className="lg:block lg:whitespace-nowrap">
               Today, the leadership reigns have been passed to our current CEO, <b className="text-[#ffffffd9]">Mr. Keith Tan</b>, who
             </span>{" "}
@@ -252,7 +252,7 @@ function TransformationSection() {
                 {card.title}
               </h3>
 
-              <p className="font-display font-light text-[16px] leading-[1.35] tracking-[-0.04em] text-white/60 w-full">
+              <p className="font-display font-light text-[18px] leading-[1.35] tracking-[-0.04em] text-white/60 w-full">
                 {card.description.split("|").map((line, i) => (
                   <span key={i}>
                     {line}

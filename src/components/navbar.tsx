@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import { ContactLink } from "@/components/contact-link";
+
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
@@ -67,17 +69,28 @@ export function Navbar() {
               (pathname === link.href ||
                 (link.href !== "/" && pathname.startsWith(link.href)));
 
+            const className = `nav-link-motion transition hover:text-white ${
+              isActive ? "text-white" : "text-white/62"
+            }`;
+            const style = {
+              color: isActive ? "#FFF" : "rgba(255,255,255,0.62)",
+            };
+
+            if (link.href === "#contact") {
+              return (
+                <ContactLink key={link.label} className={className} style={style}>
+                  {link.label}
+                </ContactLink>
+              );
+            }
+
             return (
               <Link
                 key={link.label}
                 href={link.href}
                 prefetch={false}
-                className={`nav-link-motion transition hover:text-white ${
-                  isActive ? "text-white" : "text-white/62"
-                }`}
-                style={{
-                  color: isActive ? "#FFF" : "rgba(255,255,255,0.62)",
-                }}
+                className={className}
+                style={style}
               >
                 {link.label}
               </Link>
@@ -139,17 +152,33 @@ export function Navbar() {
               (pathname === link.href ||
                 (link.href !== "/" && pathname.startsWith(link.href)));
 
+            const className = `border-b border-white/8 py-3 font-display text-[12px] font-bold uppercase tracking-[0.12em] transition last:border-b-0 hover:text-white ${
+              isActive ? "text-white" : "text-white/82"
+            }`;
+            const style = {
+              color: isActive ? "#FFF" : "rgba(255,255,255,0.82)",
+            };
+
+            if (link.href === "#contact") {
+              return (
+                <ContactLink
+                  key={link.label}
+                  className={className}
+                  style={style}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </ContactLink>
+              );
+            }
+
             return (
               <Link
                 key={link.label}
                 href={link.href}
                 prefetch={false}
-                className={`border-b border-white/8 py-3 font-display text-[12px] font-bold uppercase tracking-[0.12em] transition last:border-b-0 hover:text-white ${
-                  isActive ? "text-white" : "text-white/82"
-                }`}
-                style={{
-                  color: isActive ? "#FFF" : "rgba(255,255,255,0.82)",
-                }}
+                className={className}
+                style={style}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
