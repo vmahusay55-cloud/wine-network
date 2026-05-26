@@ -40,7 +40,7 @@ export function AdvantageSection() {
         </div>
 
         {/* 3-column staggered grid */}
-        <div className="mt-14 grid gap-6 lg:grid-cols-[380px_380px_380px] lg:items-center lg:justify-center lg:gap-6">
+        <div className="mt-14 grid gap-6 lg:grid-cols-[540px_540px_540px] lg:items-center lg:justify-center lg:gap-6">
           {/* Col 1 - Margins (centered vertically vs. center column) */}
           <div>
             <IconCard {...margins} />
@@ -48,7 +48,7 @@ export function AdvantageSection() {
 
           {/* Col 2 - description + Curations stacked */}
           <div className="flex flex-col gap-6">
-            <p className="border border-[#616161] bg-white/[0.02] p-6 text-[13px] w-full font-extralight leading-[18px] text-white lg:w-fit lg:px-7 lg:py-8" style={{ width: "100%" }}>
+            <p className="border border-[#616161] bg-white/[0.02] p-6 text-[20px] w-full font-extralight leading-[26px] text-white lg:w-fit lg:px-7 lg:py-8" style={{ width: "100%" }}>
               {descriptionLines.map((line, i) => (
                 <span key={line} className="lg:block text-white lg:whitespace-nowrap">
                   {line}

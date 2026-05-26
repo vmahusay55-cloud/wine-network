@@ -31,7 +31,7 @@ export function ContactLink({ children, onClick, ...rest }: ContactLinkProps) {
       const cta = document.getElementById("contact-cta");
       if (cta) {
         const rect = cta.getBoundingClientRect();
-        const desiredScroll = window.scrollY + rect.top - NAVBAR_OFFSET;
+        const desiredScroll = (window.scrollY-150) + rect.top - NAVBAR_OFFSET;
         window.scrollTo({ top: desiredScroll, behavior: "smooth" });
       } else {
         // Fallback: scroll to bottom of page

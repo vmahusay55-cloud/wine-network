@@ -164,7 +164,7 @@ function KeyPhilosophySection() {
           ))}
         </div>
 
-        <p className="mt-3 font-light max-w-[1000px] text-center font-display text-[20px] leading-[1.15] text-white/70 lg:block">
+        <p className="mt-3 font-light max-w-[1000px] text-center font-display text-[20px] leading-[1.30] text-white/70 lg:block">
           The range spans blanc de blancs sparkling wine, chardonnay, pinot noir, syrah, barbera,<span className="hidden sm:inline"><br/></span>
           tempranillo, cabernet sauvignon and rosé, all from Adelaide Hills fruit and all defined by one<span className="hidden sm:inline"><br/></span>
           overriding philosophy: extended time on lees. Where most producers move wines to bottle as<span className="hidden sm:inline"><br/></span>
@@ -208,7 +208,7 @@ function TerroirSection() {
             Adelaide Hills
           </h2>
 
-         <div className="mt-6 font-[350] space-y-5 font-display text-[20px] leading-[1.30] tracking-[-0.04em] text-white/70 lg:max-w-[470px]">
+         <div className="mt-6 font-light space-y-5 font-display text-[20px] leading-[1.30] text-white/70 lg:max-w-[470px]">
           <div className="lg:hidden">
             <p>
               The chardonnay and pinot noir are both sourced from the ex-Lenswood Research
@@ -252,6 +252,7 @@ function TerroirSection() {
           className="max-w-[461px]"
         />
       </div>
+
     </section>
   );
 }

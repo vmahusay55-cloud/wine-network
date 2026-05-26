@@ -10,7 +10,6 @@ export function Footer() {
   return (
     <footer className="relative isolate overflow-hidden bg-black">
       <div
-        id="contact"
         className="relative z-10 mx-auto max-w-[1442px] px-6 pt-12  sm:px-10 sm:pt-14 lg:px-[79px] lg:pt-[88px]"
       >
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[26%_27%_25%_22%] lg:items-start lg:gap-0">

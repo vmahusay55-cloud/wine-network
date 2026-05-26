@@ -69,7 +69,7 @@ function CardContent({
         >
           {title}
         </h3>
-        <p className="font-display font-light text-[13px] leading-[1.45] tracking-[-0.04em] text-white/68 sm:text-[15px] sm:leading-6 lg:text-[20px] lg:leading-[1.5]">
+        <p className="font-display font-light text-[20px] leading-[1.45] tracking-[-0.04em] text-white/68 sm:text-[text] sm:leading-6 lg:text-[20px] lg:leading-[1.5]">
           {description}
         </p>
       </div>
@@ -113,7 +113,7 @@ export function EcosystemSection() {
               Aftermeal Marketing.
             </h2>
           </div>
-          <div className="flex font-light max-w-[567px] flex-col gap-5 font-display text-[16px] leading-[1.5] tracking-[-0.04em] text-white/60 lg:w-[567px] lg:shrink-0 lg:text-[20px] lg:leading-[1.5]">
+          <div className="flex font-light max-w-[567px] flex-col gap-5 font-display text-[20px] leading-[1.5] tracking-[-0.04em] text-white/60 lg:w-[567px] lg:shrink-0 lg:text-[20px] lg:leading-[1.5]">
             <p className="text-center lg:text-left">
               Most hospitality groups leave their most valuable asset - the guest relationship - at
               the table. That&rsquo;s why we&rsquo;ve built the world&rsquo;s first Aftermeal
