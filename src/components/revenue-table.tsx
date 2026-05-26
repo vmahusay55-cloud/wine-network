@@ -44,7 +44,7 @@ export function RevenueTable() {
         <table className="w-full min-w-[760px] border-collapse text-left">
           <thead>
             <tr className="border-b border-[#616161]">
-              <th className="px-px py-8 align-middle font-display text-[18px] font-normal uppercase tracking-[-0.02em] text-white sm:text-[20px]">
+              <th className="px-px py-8 align-middle font-display text-[20px] font-normal uppercase tracking-[-0.02em] text-white sm:text-[20px]">
                 Metric Type
               </th>
               {revenueColumns.map((column, index) => {
@@ -71,7 +71,7 @@ export function RevenueTable() {
                 key={row.metric}
                 className={rowIndex === 0 ? "" : "border-t border-[rgba(77,70,53,0.1)]"}
               >
-                <td className="px-px py-8 align-middle font-display text-[15px] font-normal tracking-[-0.02em] text-[#616161] sm:text-[18px]">
+                <td className="px-px py-8 align-middle font-display text-[15px] font-normal tracking-[-0.02em] text-[#616161] sm:text-[20px]">
                   {row.metric}
                 </td>
                 {row.values.map((value, index) => (

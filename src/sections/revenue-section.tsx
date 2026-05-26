@@ -25,7 +25,7 @@ export function RevenueSection() {
             <br />
             <span className="font-bold text-white">Revenue</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-md font-display text-[15px] font-normal leading-[1.4] tracking-[-0.01em] text-white sm:text-[18px]">
+          <p className="mx-auto mt-4 max-w-md font-display text-[15px] font-normal leading-[1.4] tracking-[-0.01em] text-white sm:text-[20px]">
             Based on hospitality group moving 500 cases (6,000 bottles) per year in Singapore.
           </p>
         </div>

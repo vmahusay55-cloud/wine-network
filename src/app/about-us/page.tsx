@@ -47,7 +47,7 @@ function VintageSection() {
         </div>
         <div className="about-vintage-copy sm:mx-auto max-w-[620px] lg:absolute lg:left-[579px] lg:top-[82px] lg:h-[313px] lg:w-[620px]">
           <AboutIntroHeading />
-          <div className="about-vintage-body font-light mt-[22px] space-y-[20px] font-display text-[18px] leading-[1.42] tracking-[-0.04em] text-white/60 lg:text-[18px]">
+          <div className="about-vintage-body font-light mt-[22px] space-y-[20px] font-display text-[20px] leading-[1.42] tracking-[-0.04em] text-white/60 lg:text-[20px]">
             <p className="about-vintage-paragraph text-center sm:text-center lg:text-left">
               The Wine Network story began around a table shared by friends. Founded in <b className="text-[#ffffffd9]">2001</b> by our
               Chairman Emeritus, <b className="text-[#ffffffd9]">Mr. Thomas Teo</b>, we started as a humble community of enthusiasts
@@ -134,7 +134,7 @@ function WorldSection() {
                 <p className="text-[56px] font-bold leading-none tracking-[-0.04em] text-white">
                   {stat.value}
                 </p>
-                <p className="mt-2 text-[18px] font-medium leading-none tracking-[-0.04em] text-white/60">
+                <p className="mt-2 text-[20px] font-medium leading-none tracking-[-0.04em] text-white/60">
                   {stat.label}
                 </p>
               </div>
@@ -252,7 +252,7 @@ function TransformationSection() {
                 {card.title}
               </h3>
 
-              <p className="font-display font-light text-[18px] leading-[1.35] tracking-[-0.04em] text-white/60 w-full">
+              <p className="font-display font-light text-[20px] leading-[1.35] tracking-[-0.04em] text-white/60 w-full">
                 {card.description.split("|").map((line, i) => (
                   <span key={i}>
                     {line}

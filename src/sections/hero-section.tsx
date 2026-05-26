@@ -38,7 +38,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <p className="hero-copy-in hero-copy-in-5 mt-5 max-w-[330px] sm:max-w-[380px] text-[18px] font-light leading-6 text-center lg:text-left mx-auto lg:mx-0 sm:mt-6 lg:mt-5 text-white">
+          <p className="hero-copy-in hero-copy-in-5 mt-5 max-w-[330px] sm:max-w-[380px] text-[20px] font-light leading-6 text-center lg:text-left mx-auto lg:mx-0 sm:mt-6 lg:mt-5 text-white">
             We source the world&apos;s finest unlabelled wines that consistently outperform the icons.
           </p>
          <Button
