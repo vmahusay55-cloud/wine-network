@@ -22,7 +22,7 @@ export function IconCard({
   const descriptionLines = Array.isArray(description) ? description : [description];
 
   return (
-    <article className="motion-card w-full border-l-2 border-white/12 bg-[#201F1F] px-6 py-5 text-left lg:w-[540px] lg:px-7 lg:py-7">
+    <article className="motion-card w-full border-l-2 border-white/12 bg-[#201F1F] px-6 py-5 text-left lg:w-[400px] lg:px-7 lg:py-7">
       <Image
         src={iconSrc}
         alt=""
@@ -35,12 +35,7 @@ export function IconCard({
         {title}
       </h3>
       <p className="mt-3 text-[20px] font-extralight leading-[26px] text-white/70">
-        {descriptionLines.map((line, i) => (
-          <span key={line} className="lg:block lg:whitespace-nowrap">
-            {line}
-            {i < descriptionLines.length - 1 ? " " : ""}
-          </span>
-        ))}
+        {descriptionLines.join(" ")}
       </p>
     </article>
   );
